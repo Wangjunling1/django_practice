@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>我的信息</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到车讯息!</div>
+			<div class="fr">
+				<div class="login_btn fl">
+					<a href="/zhuxiao/">注销</a>
+                    <span>|</span>
+                    <a href="/login/">登录</a>
+					<span>|</span>
+					<a href="/register/">注册</a>
+				</div>
+
+			</div>
+		</div>		
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="/index/" class="logo fl" style="font-size: 45px;color: #333333">首页</a>
+		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;我的信息</div>
+
+	</div>
+
+	<div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>我的信息</h3>
+			<ul>
+				<li><a href="/user_info/" class="active">· 个人信息</a></li>
+				<li><a href="/user_info1/">· 给我加油</a></li>
+				<li><a href="/user_info2/">· 求职岗位</a></li>
+			</ul>
+		</div>
+		<div class="right_content clearfix">
+				<div class="info_con clearfix">
+				<h3 class="common_title2">基本信息</h3>
+						<ul class="user_info_list">
+							<li><span>用户名：</span>15705042843</li>
+							<li><span>联系方式：</span>15705042843</li>
+							<li><span>现居地址：</span>北京市昌平区</li>
+						</ul>
+				</div>
+				
+				<h3 class="common_title2">联系我</h3>
+				<div class="has_view_list">
+					<ul class="goods_type_list clearfix">
+				<li>
+					<img style="width: 200px;height: 250px;" src="/static/images/me/wei.jpg">
+				</li>
+                        <li>
+                            <img style="width: 250px;height: 250px" src="/static/images/me/598187babf39e.gif">
+                        </li>
+
+			</ul>
+		</div>
+		</div>
+	</div>
+
+
+{% include 'dibu/dibu.html' %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+<div class="pagenation">
+                {% if posts.has_previous %}
+				<a href="?p={{ posts.previous_page_number }}"><上一页</a>
+                {% endif %}
+                {% for i  in posts.paginator.pager_num_range %}
+                    {% if i == posts.number %}
+                        <a href="?p={{ i }}" class="active">{{ i }}</a>
+                    {% else %}
+                        <a href="?p={{ i }}">{{ i }}</a>
+                    {% endif %}
+                {% endfor %}
+				{% if posts.has_next %}
+				<a href="?p={{ posts.next_page_number }}">下一页></a>
+                {% endif %}
+                <a href="?p={{ posts.paginator.num_pages }}">共{{ posts.paginator.num_pages }}页</a>
+</div>

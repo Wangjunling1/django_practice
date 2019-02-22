@@ -1,0 +1,236 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Feb 18 15:32:06 2019] ***
+compiled with version: 4.8.5 20150623 (Red Hat 4.8.5-11) on 04 November 2018 07:29:14
+os: Linux-3.10.0-514.26.2.el7.x86_64 #1 SMP Tue Jul 4 15:04:05 UTC 2017
+nodename: iz2ze511c6e8gikabwbjabz
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /lian/script
+writing pidfile to /lian/script/uwsgi.pid
+detected binary path: /usr/local/python3/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /lian
+your processes number limit is 7277
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+!!! no /etc/mime.types file found !!!
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:80 fd 3
+uwsgi socket 0 bound to UNIX address /lian/script/uwsgi.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.0 (default, Nov  2 2018, 21:47:41)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-11)]
+Python main interpreter initialized at 0xa7c8a0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 162224 bytes (158 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xa7c8a0 pid: 2503 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2503)
+spawned uWSGI worker 1 (pid: 2505, cores: 1)
+spawned uWSGI http 1 (pid: 2506)
+[pid: 2505|app: 0|req: 1/1] 124.205.149.34 () {38 vars in 656 bytes} [Mon Feb 18 15:33:13 2019] GET / => generated 31385 bytes in 278 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: -1|req: -1/2] 124.205.149.34 () {36 vars in 599 bytes} [Mon Feb 18 15:33:13 2019] GET /static/css/reset.css => generated 664 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 86 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/3] 124.205.149.34 () {36 vars in 597 bytes} [Mon Feb 18 15:33:13 2019] GET /static/css/main.css => generated 23000 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/4] 124.205.149.34 () {36 vars in 596 bytes} [Mon Feb 18 15:33:13 2019] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/5] 124.205.149.34 () {36 vars in 580 bytes} [Mon Feb 18 15:33:13 2019] GET /static/js/slide.js => generated 2473 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/6] 124.205.149.34 () {36 vars in 604 bytes} [Mon Feb 18 15:33:13 2019] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/7] 124.205.149.34 () {36 vars in 636 bytes} [Mon Feb 18 15:33:13 2019] GET /static/images/che/huan1a.jpg => generated 64386 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/8] 124.205.149.34 () {36 vars in 636 bytes} [Mon Feb 18 15:33:13 2019] GET /static/images/che/huan2a.jpg => generated 217114 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/9] 124.205.149.34 () {36 vars in 636 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/huan3a.jpg => generated 204222 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/10] 124.205.149.34 () {36 vars in 642 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/gainian1a.jpg => generated 46234 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/11] 124.205.149.34 () {36 vars in 636 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/huan4a.jpg => generated 213854 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/12] 124.205.149.34 () {36 vars in 636 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/jiaoce.jpg => generated 11479 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/13] 124.205.149.34 () {36 vars in 642 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/gainian3a.jpg => generated 28024 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/14] 124.205.149.34 () {36 vars in 634 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/paoce.jpg => generated 14278 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/15] 124.205.149.34 () {36 vars in 634 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/yueye.jpg => generated 10619 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/16] 124.205.149.34 () {36 vars in 645 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/icons.png => generated 5931 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/17] 124.205.149.34 () {36 vars in 632 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/pika.jpg => generated 96426 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/18] 124.205.149.34 () {36 vars in 646 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/xinnengyuan.jpg => generated 62221 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/19] 124.205.149.34 () {36 vars in 634 bytes} [Mon Feb 18 15:33:14 2019] GET /static/images/che/mpvce.jpg => generated 34072 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2505|app: 0|req: 2/20] 124.205.149.34 () {40 vars in 655 bytes} [Mon Feb 18 15:33:15 2019] GET /favicon.ico => generated 3618 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 117.162.244.27 client_port: 17891] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Mon Feb 18 15:38:25 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 117.162.244.27) !!!
+Mon Feb 18 15:38:25 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (117.162.244.27)
+OSError: write error
+[pid: 2505|app: 0|req: 3/21] 117.162.244.27 () {32 vars in 353 bytes} [Mon Feb 18 15:38:25 2019] HEAD / => generated 0 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 4/22] 41.32.201.175 () {22 vars in 232 bytes} [Mon Feb 18 15:40:33 2019] GET / => generated 31385 bytes in 233 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 5/23] 171.84.5.2 () {38 vars in 637 bytes} [Mon Feb 18 15:46:37 2019] GET / => generated 31385 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: -1|req: -1/24] 171.84.5.2 () {38 vars in 620 bytes} [Mon Feb 18 15:46:37 2019] GET /static/css/main.css => generated 23000 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/25] 171.84.5.2 () {38 vars in 622 bytes} [Mon Feb 18 15:46:37 2019] GET /static/css/reset.css => generated 664 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 86 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/26] 171.84.5.2 () {38 vars in 603 bytes} [Mon Feb 18 15:46:37 2019] GET /static/js/slide.js => generated 2473 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/27] 171.84.5.2 () {38 vars in 627 bytes} [Mon Feb 18 15:46:37 2019] GET /static/js/jquery-1.12.4.min.js => generated 97163 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/28] 171.84.5.2 () {38 vars in 619 bytes} [Mon Feb 18 15:46:37 2019] GET /static/js/jquery-ui.min.js => generated 70994 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/29] 171.84.5.2 () {38 vars in 634 bytes} [Mon Feb 18 15:46:38 2019] GET /static/images/che/huan2a.jpg => generated 217114 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/30] 171.84.5.2 () {38 vars in 634 bytes} [Mon Feb 18 15:46:38 2019] GET /static/images/che/huan1a.jpg => generated 64386 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/31] 171.84.5.2 () {38 vars in 634 bytes} [Mon Feb 18 15:46:38 2019] GET /static/images/che/huan4a.jpg => generated 213854 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/32] 171.84.5.2 () {38 vars in 634 bytes} [Mon Feb 18 15:46:38 2019] GET /static/images/che/huan3a.jpg => generated 204222 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/33] 171.84.5.2 () {38 vars in 640 bytes} [Mon Feb 18 15:46:38 2019] GET /static/images/che/gainian1a.jpg => generated 46234 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/34] 171.84.5.2 () {38 vars in 634 bytes} [Mon Feb 18 15:46:38 2019] GET /static/images/che/jiaoce.jpg => generated 11479 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/35] 171.84.5.2 () {38 vars in 632 bytes} [Mon Feb 18 15:46:38 2019] GET /static/images/che/paoce.jpg => generated 14278 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/36] 171.84.5.2 () {38 vars in 632 bytes} [Mon Feb 18 15:46:39 2019] GET /static/images/che/yueye.jpg => generated 10619 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/37] 171.84.5.2 () {38 vars in 642 bytes} [Mon Feb 18 15:46:39 2019] GET /static/images/che/xinnengyuan.jpg => generated 62221 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/38] 171.84.5.2 () {38 vars in 631 bytes} [Mon Feb 18 15:46:39 2019] GET /static/images/che/mpvce.jpg => generated 34072 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/39] 171.84.5.2 () {38 vars in 640 bytes} [Mon Feb 18 15:46:39 2019] GET /static/images/che/gainian3a.jpg => generated 28024 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/40] 171.84.5.2 () {38 vars in 629 bytes} [Mon Feb 18 15:46:39 2019] GET /static/images/che/pika.jpg => generated 96426 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/41] 171.84.5.2 () {38 vars in 642 bytes} [Mon Feb 18 15:46:40 2019] GET /static/images/icons.png => generated 5931 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2505|app: 0|req: 6/42] 171.84.5.2 () {36 vars in 623 bytes} [Mon Feb 18 15:46:40 2019] GET /favicon.ico => generated 3618 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 7/43] 124.205.149.34 () {36 vars in 625 bytes} [Mon Feb 18 15:47:09 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 8/44] 124.205.149.34 () {36 vars in 624 bytes} [Mon Feb 18 15:47:54 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 9/45] 124.205.149.34 () {38 vars in 673 bytes} [Mon Feb 18 15:48:05 2019] GET /login/ => generated 1678 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2505|app: -1|req: -1/46] 124.205.149.34 () {36 vars in 649 bytes} [Mon Feb 18 15:48:05 2019] GET /static/images/icons02.png => generated 2071 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 10/47] 124.205.149.34 () {38 vars in 687 bytes} [Mon Feb 18 15:48:18 2019] GET /user_info/ => generated 2608 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2505|app: -1|req: -1/48] 124.205.149.34 () {36 vars in 638 bytes} [Mon Feb 18 15:48:18 2019] GET /static/images/me/wei.jpg => generated 83120 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/49] 124.205.149.34 () {36 vars in 658 bytes} [Mon Feb 18 15:48:18 2019] GET /static/images/me/598187babf39e.gif => generated 161994 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/50] 124.205.149.34 () {36 vars in 649 bytes} [Mon Feb 18 15:48:18 2019] GET /static/images/left_bg.jpg => generated 1367 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 11/51] 124.205.149.34 () {38 vars in 693 bytes} [Mon Feb 18 15:48:20 2019] GET /user_info2/ => generated 2689 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 12/52] 124.205.149.34 () {38 vars in 694 bytes} [Mon Feb 18 15:48:22 2019] GET /user_info1/ => generated 3028 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 2505|app: -1|req: -1/53] 124.205.149.34 () {36 vars in 649 bytes} [Mon Feb 18 15:48:22 2019] GET /static/images/me/weizhifu.jpg => generated 94245 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 2505|app: -1|req: -1/54] 124.205.149.34 () {36 vars in 641 bytes} [Mon Feb 18 15:48:22 2019] GET /static/images/me/zifu.jpg => generated 107720 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 2 headers in 89 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 13/55] 124.205.149.34 () {38 vars in 694 bytes} [Mon Feb 18 15:48:23 2019] GET /user_info2/ => generated 2689 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 88.198.27.52 client_port: 52896] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Mon Feb 18 17:28:48 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Mon Feb 18 17:28:48 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 14/56] 88.198.27.52 () {30 vars in 432 bytes} [Mon Feb 18 17:28:48 2019] GET / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 183.192.27.46 client_port: 33474] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Mon Feb 18 18:39:32 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 183.192.27.46) !!!
+Mon Feb 18 18:39:32 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (183.192.27.46)
+OSError: write error
+[pid: 2505|app: 0|req: 15/57] 183.192.27.46 () {32 vars in 352 bytes} [Mon Feb 18 18:39:32 2019] HEAD / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/clientapi.ipip.net/echo.php
+[pid: 2505|app: 0|req: 16/58] 139.162.88.63 () {28 vars in 421 bytes} [Mon Feb 18 18:50:32 2019] GET http://clientapi.ipip.net/echo.php?info=1234567890 => generated 1718 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 17/59] 85.105.120.32 () {22 vars in 232 bytes} [Mon Feb 18 18:55:27 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 18/60] 78.188.87.121 () {22 vars in 232 bytes} [Mon Feb 18 20:12:01 2019] GET / => generated 31385 bytes in 17 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 19/61] 159.146.28.107 () {28 vars in 409 bytes} [Mon Feb 18 20:31:47 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 20/62] 14.191.242.58 () {22 vars in 232 bytes} [Mon Feb 18 21:08:57 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 88.198.27.52 client_port: 30316] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Mon Feb 18 21:11:02 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Mon Feb 18 21:11:02 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 21/63] 88.198.27.52 () {30 vars in 432 bytes} [Mon Feb 18 21:11:02 2019] GET / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 2505|app: 0|req: 22/64] 80.82.70.187 () {28 vars in 424 bytes} [Mon Feb 18 21:16:31 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1727 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 175.155.220.83 client_port: 9385] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Mon Feb 18 21:20:11 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 175.155.220.83) !!!
+Mon Feb 18 21:20:11 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (175.155.220.83)
+OSError: write error
+[pid: 2505|app: 0|req: 23/65] 175.155.220.83 () {32 vars in 352 bytes} [Mon Feb 18 21:20:11 2019] HEAD / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 24/66] 88.251.141.164 () {22 vars in 233 bytes} [Mon Feb 18 21:41:32 2019] GET / => generated 31385 bytes in 14 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 25/67] 191.17.92.129 () {28 vars in 408 bytes} [Mon Feb 18 21:41:53 2019] GET / => generated 31385 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+Mon Feb 18 22:46:02 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Mon Feb 18 22:46:02 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 26/68] 88.198.27.52 () {30 vars in 432 bytes} [Mon Feb 18 22:46:02 2019] GET / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 27/69] 45.125.116.130 () {28 vars in 409 bytes} [Mon Feb 18 23:45:28 2019] GET / => generated 31385 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 28/70] 187.192.195.158 () {28 vars in 410 bytes} [Tue Feb 19 00:23:05 2019] GET / => generated 31385 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 223.96.148.201 client_port: 49844] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 00:24:04 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 223.96.148.201) !!!
+Tue Feb 19 00:24:04 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (223.96.148.201)
+OSError: write error
+[pid: 2505|app: 0|req: 29/71] 223.96.148.201 () {32 vars in 353 bytes} [Tue Feb 19 00:24:04 2019] HEAD / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 30/72] 181.197.7.2 () {22 vars in 229 bytes} [Tue Feb 19 00:58:46 2019] GET / => generated 31385 bytes in 12 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 31/73] 47.95.28.143 () {22 vars in 231 bytes} [Tue Feb 19 01:30:18 2019] GET / => generated 31385 bytes in 12 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 32/74] 189.27.99.57 () {22 vars in 231 bytes} [Tue Feb 19 01:32:15 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 33/75] 131.100.83.75 () {28 vars in 407 bytes} [Tue Feb 19 02:25:28 2019] GET / => generated 31385 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 34/76] 190.158.255.210 () {22 vars in 234 bytes} [Tue Feb 19 02:41:36 2019] GET / => generated 31385 bytes in 16 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 35/77] 219.68.10.208 () {22 vars in 231 bytes} [Tue Feb 19 03:19:18 2019] GET / => generated 31385 bytes in 12 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 222.242.254.17 client_port: 12363] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 03:38:30 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 222.242.254.17) !!!
+Tue Feb 19 03:38:30 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (222.242.254.17)
+OSError: write error
+[pid: 2505|app: 0|req: 36/78] 222.242.254.17 () {32 vars in 353 bytes} [Tue Feb 19 03:38:30 2019] HEAD / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 47.92.98.215 client_port: 8621] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 04:38:10 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 47.92.98.215) !!!
+Tue Feb 19 04:38:10 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (47.92.98.215)
+OSError: write error
+[pid: 2505|app: 0|req: 37/79] 47.92.98.215 () {30 vars in 420 bytes} [Tue Feb 19 04:38:10 2019] GET / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 38/80] 95.143.140.136 () {28 vars in 409 bytes} [Tue Feb 19 04:56:28 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: www.wjl.pub client_addr: 47.92.54.139 client_port: 13240] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 04:58:22 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 47.92.54.139) !!!
+Tue Feb 19 04:58:22 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (47.92.54.139)
+OSError: write error
+[pid: 2505|app: 0|req: 39/81] 47.92.54.139 () {30 vars in 425 bytes} [Tue Feb 19 04:58:22 2019] GET / => generated 0 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 88.198.27.52 client_port: 23190] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 05:16:55 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Tue Feb 19 05:16:55 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 40/82] 88.198.27.52 () {30 vars in 432 bytes} [Tue Feb 19 05:16:55 2019] GET / => generated 0 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 88.198.27.52 client_port: 22157] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 05:19:53 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Tue Feb 19 05:19:53 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 41/83] 88.198.27.52 () {30 vars in 432 bytes} [Tue Feb 19 05:19:53 2019] GET / => generated 0 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 88.198.27.52 client_port: 31639] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 05:48:43 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Tue Feb 19 05:48:43 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 42/84] 88.198.27.52 () {30 vars in 432 bytes} [Tue Feb 19 05:48:43 2019] GET / => generated 0 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 157.55.39.130 client_port: 47943] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 05:49:02 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 157.55.39.130) !!!
+Tue Feb 19 05:49:02 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (157.55.39.130)
+OSError: write error
+[pid: 2505|app: 0|req: 43/85] 157.55.39.130 () {38 vars in 640 bytes} [Tue Feb 19 05:49:02 2019] GET / => generated 0 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 44/86] 186.206.120.120 () {22 vars in 234 bytes} [Tue Feb 19 06:04:04 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 45/87] 186.206.120.120 () {22 vars in 234 bytes} [Tue Feb 19 06:04:08 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 88.198.27.52 client_port: 21865] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 06:30:10 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Tue Feb 19 06:30:10 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 46/88] 88.198.27.52 () {30 vars in 432 bytes} [Tue Feb 19 06:30:10 2019] GET / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[pid: 2505|app: 0|req: 47/89] 80.82.70.187 () {28 vars in 424 bytes} [Tue Feb 19 07:27:12 2019] GET http://www.baidu.com/cache/global/img/gs.gif => generated 1727 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 48/90] 37.255.76.15 () {28 vars in 406 bytes} [Tue Feb 19 07:48:24 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 49/91] 1.34.98.217 () {22 vars in 230 bytes} [Tue Feb 19 08:04:45 2019] GET / => generated 31385 bytes in 15 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 50/92] 182.30.226.190 () {28 vars in 415 bytes} [Tue Feb 19 08:30:09 2019] GET / => generated 31385 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 51/93] 177.155.128.3 () {28 vars in 407 bytes} [Tue Feb 19 08:40:33 2019] GET / => generated 31385 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 52/94] 177.11.140.123 () {28 vars in 409 bytes} [Tue Feb 19 09:34:30 2019] GET / => generated 31385 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 53/95] 47.97.16.76 () {22 vars in 230 bytes} [Tue Feb 19 09:34:46 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 27.156.207.2 client_port: 64615] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 09:56:46 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 27.156.207.2) !!!
+Tue Feb 19 09:56:46 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (27.156.207.2)
+OSError: write error
+[pid: 2505|app: 0|req: 54/96] 27.156.207.2 () {32 vars in 351 bytes} [Tue Feb 19 09:56:46 2019] HEAD / => generated 0 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 116.8.209.224 client_port: 32825] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 09:56:48 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 116.8.209.224) !!!
+Tue Feb 19 09:56:48 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (116.8.209.224)
+OSError: write error
+[pid: 2505|app: 0|req: 55/97] 116.8.209.224 () {32 vars in 352 bytes} [Tue Feb 19 09:56:48 2019] HEAD / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 56/98] 188.143.14.211 () {28 vars in 408 bytes} [Tue Feb 19 10:27:16 2019] GET / => generated 31385 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 57/99] 218.232.161.9 () {22 vars in 232 bytes} [Tue Feb 19 11:02:44 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 58/100] 189.76.233.226 () {28 vars in 408 bytes} [Tue Feb 19 11:43:47 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 59/101] 195.9.12.74 () {28 vars in 405 bytes} [Tue Feb 19 12:03:36 2019] GET / => generated 31385 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 60/102] 62.63.151.22 () {28 vars in 407 bytes} [Tue Feb 19 12:04:21 2019] GET / => generated 31385 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 111.27.129.204 client_port: 32495] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 12:12:01 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 111.27.129.204) !!!
+Tue Feb 19 12:12:01 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during HEAD / (111.27.129.204)
+OSError: write error
+[pid: 2505|app: 0|req: 61/103] 111.27.129.204 () {32 vars in 353 bytes} [Tue Feb 19 12:12:01 2019] HEAD / => generated 0 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 62/104] 139.162.119.197 () {28 vars in 351 bytes} [Tue Feb 19 12:23:43 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 63/105] 114.47.228.146 () {22 vars in 233 bytes} [Tue Feb 19 12:30:49 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 64/106] 180.246.115.213 () {28 vars in 408 bytes} [Tue Feb 19 13:25:50 2019] GET / => generated 31385 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 65/107] 172.222.101.126 () {28 vars in 408 bytes} [Tue Feb 19 13:51:19 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 2505|app: 0|req: 66/108] 179.113.119.72 () {28 vars in 409 bytes} [Tue Feb 19 14:33:12 2019] GET / => generated 31385 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: www.wjl.pub client_addr: 104.192.74.45 client_port: 47840] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 14:46:27 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 104.192.74.45) !!!
+Tue Feb 19 14:46:27 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (104.192.74.45)
+OSError: write error
+[pid: 2505|app: 0|req: 67/109] 104.192.74.45 () {40 vars in 681 bytes} [Tue Feb 19 14:46:27 2019] GET / => generated 0 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[uwsgi-http key: www.wjl.pub client_addr: 104.192.74.45 client_port: 62688] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 14:46:27 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 104.192.74.45) !!!
+Tue Feb 19 14:46:27 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (104.192.74.45)
+OSError: write error
+[pid: 2505|app: 0|req: 68/110] 104.192.74.45 () {32 vars in 406 bytes} [Tue Feb 19 14:46:27 2019] GET / => generated 0 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 2505|app: 0|req: 69/111] 149.126.97.122 () {22 vars in 233 bytes} [Tue Feb 19 14:47:07 2019] GET / => generated 31385 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 111 bytes (1 switches on core 0)
+[uwsgi-http key: wjl.pub client_addr: 88.198.27.52 client_port: 17359] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Tue Feb 19 15:05:37 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 88.198.27.52) !!!
+Tue Feb 19 15:05:37 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (88.198.27.52)
+OSError: write error
+[pid: 2505|app: 0|req: 70/112] 88.198.27.52 () {30 vars in 432 bytes} [Tue Feb 19 15:05:37 2019] GET / => generated 0 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)

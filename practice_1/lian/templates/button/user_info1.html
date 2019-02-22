@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>我的信息</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到车讯息!</div>
+			<div class="fr">
+				<div class="login_btn fl">
+					<a href="/zhuxiao/">注销</a>
+                    <span>|</span>
+                    <a href="/login/">登录</a>
+					<span>|</span>
+					<a href="/register/">注册</a>
+				</div>
+
+			</div>
+		</div>		
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="/index/" class="logo fl" style="font-size: 45px;color: #333333">首页</a>
+		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;我的信息</div>
+
+	</div>
+
+	<div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>我的信息</h3>
+			<ul>
+				<li><a href="/user_info/" >· 个人信息</a></li>
+				<li><a href="/user_info1/" class="active">· 给我加油</a></li>
+				<li><a href="/user_info2/">· 求职岗位</a></li>
+			</ul>
+		</div>
+		<div class="right_content clearfix">
+				<div class="info_con clearfix">
+				<h3 class="common_title2">格言 ：</h3>
+						<ul class="user_info_list">
+							<li>当你的才华还撑不起你的野心的时候，你就应该静下心来学习；当你的能力还驾驭不了你的目标时，就应该沉下心来，历练；梦想，不是浮躁，而是沉淀和积累，只有拼出来的美丽，没有等出来的辉煌，机会永远是留给最渴望的那个人，学会与内心深处的你对话，问问自己，想要怎样的人生，静心学习，耐心沉淀，送给自己，共勉。</li>
+
+						</ul>
+				</div>
+				
+
+            <h3 class="common_title2">求打赏</h3>
+				<div class="has_view_list">
+					<ul class="goods_type_list clearfix">
+                            <img style="width: 200px;height: 250px" src="/static/images/me/weizhifu.jpg">
+                            <img style="width: 200px;height: 250px" src="/static/images/me/zifu.jpg">
+                        <li>
+                            <img style="width: 200px;height: 250px" src="/static/images/me/598187babf39e.gif">
+                        </li>
+			        </ul>
+		        </div>
+		</div>
+	</div>
+
+
+{% include 'dibu/dibu.html' %}
+</body>
+</html>

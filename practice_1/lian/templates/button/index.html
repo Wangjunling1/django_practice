@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>车讯息-首页</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+	<script type="text/javascript" src="/static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="/static/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/static/js/slide.js"></script>
+</head>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎您的到来! 您以登录可以查询更多信息</div>
+
+			<div class="fr">
+				<div class="login_btn fl">
+                    <a href="/zhuxiao/">注销</a>
+                    <span>|</span>
+                    <a href="/login/">登录</a>
+					<span>|</span>
+					<a href="/register/">注册</a>
+                    <p style="color: red;font-size: 15px">退出时记得注销哦！！</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div class="navbar_con">
+		<div class="navbar">
+			<h1 class="fl">全部商品分类</h1>
+            <p style="font-size: 25px;text-align: center">学习网站，持续更新网站。共勉！ </p>
+		</div>
+	</div>
+
+	<div class="center_con clearfix">
+		<ul class="subnav fl">
+			<li><a href="#model01" >经济轿车</a></li>
+			<li><a href="#model02" >帅气跑车</a></li>
+			<li><a href="#model03" >狂奔越野</a></li>
+			<li><a href="#model04" >新能源车</a></li>
+			<li><a href="#model05" >MPV</a></li>
+			<li><a href="#model06" >皮卡面包车</a></li>
+		</ul>
+		<div class="slide fl">
+			<ul class="slide_pics">
+				<li><img src="/static/images/che/huan1a.jpg" alt="幻灯片"></li>
+				<li><img src="/static/images/che/huan2a.jpg" alt="幻灯片"></li>
+				<li><img src="/static/images/che/huan3a.jpg" alt="幻灯片"></li>
+				<li><img src="/static/images/che/huan4a.jpg" alt="幻灯片"></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<ul class="points"></ul>
+		</div>
+		<div class="adv fl">
+			<a href="#"><img src="/static/images/che/gainian1a.jpg"></a>
+			<a href="#"><img src="/static/images/che/gainian3a.jpg"></a>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model01">经济轿车</h3>
+
+			<a href="/list_jiaoce/" class="goods_more fr" id="fruit_more">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="/static/images/che/jiaoce.jpg"></div>
+
+			<ul class="goods_list fl">
+                {% for i in jiaoce %}
+				<li>
+					<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+					<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+					<div class="prize">¥ {{ i.carjiage }}</div>
+				</li>
+
+                {% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model02">帅气跑车</h3>
+
+			<a href="/list_paoce/" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="/static/images/che/paoce.jpg"></div>
+			<ul class="goods_list fl">
+				{% for i in paoce %}
+				<li>
+					<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+					<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+					<div class="prize">¥ {{ i.carjiage }}</div>
+				</li>
+
+                {% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model03">狂奔越野</h3>
+			<div class="subtitle fl">
+
+			</div>
+			<a href="/list_yueyece/" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="/static/images/che/yueye.jpg"></div>
+			<ul class="goods_list fl">
+				{% for i in yueyece %}
+				<li>
+					<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+					<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+					<div class="prize">¥ {{ i.carjiage }}</div>
+				</li>
+
+                {% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model04">新能源车</h3>
+
+			<a href="/list_xingnengyuan/" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="/static/images/che/xinnengyuan.jpg"></div>
+			<ul class="goods_list fl">
+				{% for i in xinnengyuance %}
+				<li>
+					<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+					<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+					<div class="prize">¥ {{ i.carjiage }}</div>
+				</li>
+
+                {% endfor %}
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model05">MPV</h3>
+
+			<a href="/list_mpvce/" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="/static/images/che/mpvce.jpg"></div>
+			<ul class="goods_list fl">
+				{% for i in mpvce %}
+				<li>
+					<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+					<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+					<div class="prize">¥ {{ i.carjiage }}</div>
+				</li>
+
+                {% endfor %}
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="list_model">
+		<div class="list_title clearfix">
+			<h3 class="fl" id="model06">皮卡面包车</h3>
+
+			<a href="/list_pikamianbo/" class="goods_more fr">查看更多 ></a>
+		</div>
+
+		<div class="goods_con clearfix">
+			<div class="goods_banner fl"><img src="/static/images/che/pika.jpg"></div>
+			<ul class="goods_list fl">
+                 {% for i in pikace %}
+                    <li>
+                        <h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+                        <a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+                        <div class="prize">¥ {{ i.carjiage }}</div>
+                    </li>
+
+                 {% endfor %}
+				{% for i in mainbaoce %}
+				<li>
+					<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+					<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+					<div class="prize">¥ {{ i.carjiage }}</div>
+				</li>
+
+                {% endfor %}
+
+			</ul>
+		</div>
+	</div>
+  {% include 'dibu/dibu.html' %}
+</body>
+</html>

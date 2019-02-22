@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>皮卡面包车</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎您的到来! 我的基本信息在下面，网页底部！有链接！</div>
+			<div class="fr">
+				<div class="login_info fl">
+				</div>
+				<div class="login_btn fl">
+
+                    <a href="/zhuxiao/">注销</a>
+				</div>
+
+			</div>
+		</div>
+
+	<div class="navbar_con">
+		<div class="navbar clearfix">
+			<div class="subnav_con fl">
+				<h1>全部商品分类</h1>
+				<span></span>
+				<ul class="subnav">
+                    <li><a href="/list_jiaoce/" >经济轿车</a></li>
+                    <li><a href="/list_paoce/" >帅气跑车</a></li>
+                    <li><a href="/list_yueyece/" >狂奔越野</a></li>
+                    <li><a href="/list_xingnengyuan/" >新能源车</a></li>
+                    <li><a href="/list_mpvce/" >MPV</a></li>
+                    <li><a href="/list_pikamianbo/" >皮卡面包车</a></li>
+				</ul>
+			</div>
+			<ul class="navlist fl">
+				<li><a href="/index/">首页</a></li>
+
+
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="breadcrumb">
+		<a href="#">全部分类</a>
+		<span>></span>
+		<a href="#">皮卡面包车</a>
+	</div>
+
+	<div class="main_wrap clearfix">
+		<div class="l_wrap fl clearfix">
+			<div class="new_goods">
+
+				<h3>新品推荐</h3>
+				<ul>
+                    {% for i in xinpikace %}
+					<li>
+						<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+						<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+						<div class="prize">{{ i.carjiage }}</div>
+					</li>
+					{% endfor %}
+                     {% for i in xinmianbaoce %}
+					<li>
+						<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+						<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+						<div class="prize">{{ i.carjiage }}</div>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+
+		<div class="r_wrap fr clearfix">
+			<div class="sort_bar">
+                <a href="/list_pikamianbo/?ce=面包车">面包车</a>
+                <a href="/list_pikamianbo/?ce=皮卡">皮卡</a>
+			</div>
+
+			<ul class="goods_type_list clearfix">
+                {% for i in posts.object_list %}
+				<li>
+					<a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+					<h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+					<div class="operate">
+						<span class="prize">￥{{ i.carjiage }}</span>
+                       	<span class="unit">{{ i.cardata }}</span>
+					</div>
+				</li>
+                {% endfor %}
+
+                 {% for i in mianbaoce %}
+                    <li>
+                        <a href="{{ i.carurl }}"><img src="{{ i.cartu }}"></a>
+                        <h4><a href="{{ i.carurl }}">{{ i.carname }}</a></h4>
+                        <div class="operate">
+                            <span class="prize">￥{{ i.carjiage }}</span>
+                            <span class="unit">{{ i.cardata }}</span>
+                        </div>
+                    </li>
+                    {% endfor %}
+
+			</ul>
+
+            {% include 'ye/ye.html' %}
+
+		</div>
+	</div>
+
+	{% include 'dibu/dibu.html' %}
+
+</body>
+</html>
