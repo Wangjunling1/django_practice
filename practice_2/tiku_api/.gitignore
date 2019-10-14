@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+*.[oa]
+*~
+*.py[cod]
+*$py.class
+**/*.py[cod]
+__pycache__/
+
+
+# Log
+log/*
+logs/
+*.log
+*log
+
+# Diff
+*.diff
+
+#Hidden
+.*
+!.gitignore
+!.style.yapf
+!.gitkeep
+
+#测试db
+test.db
+sftp-config.json
+
+#virtual env:
+*env/*
+*.sqlite3
+conf/*
+misc/api_test/reports/*html
+docs/build/*
+
+**/settings/development.py
+
