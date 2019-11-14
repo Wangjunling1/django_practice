@@ -187,20 +187,6 @@ Question
         ]
     }
 
-#需求
-需求一：将三个功能封装为服务
-http://git.lejent.cn/Spider/tiku_lib
-
-
-#
-
-需求二：按照要求刷题目格式，类似xml，封装为服务
-
-http://git.lejent.cn/Spider/afanti_tiku_lib
-
-刷的模板
-
-http://git.lejent.cn/Spider/afanti_tiku_lib/tree/master/afanti_tiku_lib/question_template
 
 
 
