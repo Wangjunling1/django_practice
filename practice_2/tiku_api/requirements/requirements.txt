@@ -6,7 +6,7 @@ cssselect==1.0.3
 Django==2.1
 dnspython==1.16.0
 idna==2.8
-lxml==4.3.3
+lxml==4.6.2
 parsel==1.5.1
 Pillow==6.0.0
 PyMySQL==0.9.3
